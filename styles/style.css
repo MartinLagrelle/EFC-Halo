@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+}
+
+h2{
+    margin-top: 2%;
+    color: white;
+    margin-left: 10%;
+}
+
+.jaquette{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.game {
+    margin-top: 20%;
+    width: 18%;
+    height: 35vh;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.game:hover{
+    transform:scale(1.15);
+}
+
+#background1 { background-image: url('../images/title.png'); }
+#background2 { background-image: url('../images/Installation04.png'); }
+#background3 { background-image: url('../images/BgReach.png'); }
+#background4 { background-image: url('../images/BgInfinite.png'); }
+#game1 { background-image: url('../images/HaloCE.png'); }
+#game2 { background-image: url('../images/Halo2.png'); }
+#game3 { background-image: url('../images/Halo3.png'); }
+#game4 { background-image: url('../images/Halo3ODST.png');}
+#game5 { background-image: url('../images/HaloReach.png');}
+#game6 { background-image: url('../images/Halo4.png');}
+#game7 { background-image: url('../images/HaloGuardians.png');}
+#game8 { background-image: url('../images/HaloInfinite.png');}
