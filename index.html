@@ -6,24 +6,57 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <div id="background1" class="background"></div>
+<body> 
+    <div id="background1" class="background">
+        <div class="modal-content"><p>Bienvenue sur le site qui regroupe les 8 plus grands jeux de la licence Halo ! Vous y trouverez leurs informations ainsi que leur histoire respective.</p></div>
+    </div>
     <div id="background2" class="background">
         <h2>1st Trilogy</h2>
         <div class="jaquette">
-            <div id="game1" class="game"></div>
-            <div id="game2" class="game"></div>
-            <div id="game3" class="game"></div>
+            <div id="game1" class="game" onclick="openModal('modal1')"></div>
+            <div id="game2" class="game" onclick="openModal('modal2')"></div>
+            <div id="game3" class="game" onclick="openModal('modal3')"></div>
         </div>
-        <div id="myModal" class="modal">
+        </div>
+        <div id="modal1" class="modal" onclick="closeModal('modal1')">
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <h3>Date de Sortie : 15 novembre 2001</h3>
+                <!--<span class="close" onclick="closeModal('modal1')">&times;</span>-->
+                <h1>Halo : Combat Evolved</h1>
                 <br>
-                <h3>Plateforme : Xbox</h3>
+                <h3>Sortie : 15/11/2001</h3>
+                <br>
+                <h3>Support : Xbox</h3>
                 <br>
                 <br>
-                <p>Some text in the Modal..</p>
+                <p>En 2552, après 27 ans de conflit, le dernier bastion de l'humanité, la planète Reach, est tombé face à la puissance de l'Alliance Covenante. L'un des seuls vaisseaux survivants de la bataille, l'UNSC Pillar of Autumn, embarque le dernier espoir de l'humanité : le Major, apparemment le dernier super-soldat issu du programme SPARTAN-II. Alors qu'il fuit l'ennemi en naviguant au hasard dans l'espace, le vaisseau rencontre une gigantesque structure artificielle en forme d'anneau : un Halo. Sur place et grâce à l’intelligence artificielle Cortana, le Major découvre que le Halo est une arme capable de détruire toute forme de vie lors de son activation. C’est alors que pendant que les Covenants ont libéré de sa quarantaine le Parasite (un organisme capable d'infecter toute forme de vie) que le Major décide de faire exploser la carcasse du Pillar of Autumn pour détruire le Halo.
+                </p>
+            </div>
+        </div>
+        <div id="modal2" class="modal" onclick="closeModal('modal2')">
+            <div class="modal-content">
+                <!--<span class="close" onclick="closeModal('modal2')">&times;</span>-->
+                <h1>Halo 2</h1>
+                <br>
+                <h3>Sortie : 9/11/2004</h3>
+                <br>
+                <h3>Support : Xbox</h3>
+                <br>
+                <br>
+                <p>Suite aux évènements de Halo Combat Evolved, le Major revient sur Terre là où les Covenants ont lancé un assaut. Le Major découvre que le prophète du Regret est dans l’un des vaisseaux qui fuit suite à son arrivée. Il pourchasse donc le prophète avec l’équipage In Amber Clad. Pendant ce temps, l'amiral de la flotte présente durant les événements du premier Halo est jugé pour son incapacité à le protéger. Pour lui offrir une mort digne et échapper à l'exécution, les Hauts Prophètes lui proposent de revêtir le rôle de Arbiter, et de devenir leur bras droit chargé d'accomplir des missions dangereuses. La première est d'éliminer le chef d'un groupe d'hérétiques opposés à la religion Covenante. Lorsqu'il sort de sous-espace, l’In Amber Clad se retrouve face à un second Halo. Le Major et les soldats disponibles sont envoyés à la surface de l'installation afin d'y pourchasser le Haut Prophète du Regret qui leur a échappé sur Terre. Alors que le Major réussit à éliminer le Prophète, Grande Bonté, la capitale des Covenants, arrive dans le système avec une immense flotte qui s'apprête à faire feu sur le Spartan. Pour survivre, il se jette dans un lac et est emporté au fond. Suite à la mort du Haut Prophète, les Élites sont remplacés par les Brutes en tant que protecteurs des Prophètes, ce qui entraîne des tensions au sein des Covenants. Peu après, Keyes et Johnson (Capitaine du In Amber Clad et le sergent de l’équipage) cherchent la clef d’accès au Halo, afin d'empêcher son activation, mais l'Arbiter est également à sa recherche. Après avoir traversé la zone de quarantaine où se trouvaient de nombreux Parasites, les humains et l'Élite se rejoignent, mais Tartarus, le chef de l'espèce Covenante des Brutes, capture les humains et laisse l'Arbiter pour mort. Le Major et l'Arbiter sont récupérés par l'intelligence centrale des Parasites : le Fossoyeur. Celui-ci envoie l'humain arrêter le Haut Prophète de la Vérité (Dirigeant de l’alliance Covenants) et l'Élite empêcher Tartarus d'activer l'anneau, afin de protéger toutes formes de vie dans la galaxie. Sur Grande Bonté, le Major découvre que les Covenants sont en proie à une terrible guerre civile et que les Parasites, qui ont pris le contrôle de l’In Amber Clad, se sont écrasés sur la capitale pour l'infecter. Alors que Vérité fuis grâce à un vaisseau Cuirassé Forerunner, le Major réussit à s’y infiltrer afin de le poursuivre. De son côté, l'Arbiter regroupe des Covenants séparatistes et s'allie au sergent Johnson pour rejoindre la salle de contrôle du Halo. Lorsqu'ils l'atteignent, Tartarus force Keyes à activer le Halo, mais l'Arbiter et Johnson réussissent à tuer le chef Brute et Keyes annule la mise à feu. Cet arrêt soudain entraîne la mise en stand-by des sept Halos répartis dans la galaxie, qui pourront être activés simultanément depuis un lieu précis : l'Arche.
+                </p>
+            </div>
+        </div>
+        <div id="modal3" class="modal" onclick="closeModal('modal3')">
+            <div class="modal-content">
+                <!--<span class="close" onclick="closeModal('modal3')">&times;</span>-->
+                <h1>Halo 3</h1>
+                <br>
+                <h3>Sortie : 25/09/2007</h3>
+                <br>
+                <h3>Support : Xbox 360</h3>
+                <br>
+                <br>
+                <p>Après être monté à bord du vaisseau du Haut Prophète de la Vérité à la fin de Halo 2, le Major est obligé de le quitter alors qu'il s'approche de la Terre, assaillie par les Covenants. Il s'écrase et est récupéré par un groupe de soldats mené par le major Johnson, accompagné par un vieil ennemi ayant décidé de s'allier aux humains pour détruire les Covenants : l'Arbiter. Pendant l’évacuation de la planète, l’UNSC découvre que les Covenants ont déterré un artéfact forerunner, au centre duquel s'est posé le vaisseau de Vérité. Cet artefact ouvre un portail qui mène à l'Arche. Sur place, le Major et l’Arbiter rejoignent la Citadelle, où se retranche le Prophète, et réussissent à le vaincre après avoir conclu une alliance inattendue avec le Parasite, qui s'est détourné de son objectif initial pour se joindre à la bataille sur l'Arche. Une fois le dernier leader des Covenants abattu, le Parasite se retourne contre ses alliés, qui découvrent que l'Arche avait commencé la construction d'un nouveau Halo suite à la destruction du premier. L’IA Cortana propose donc d’activer l’anneau pendant sa construction, ce qui provoquera son autodestruction, et avec lui la destruction de l'Arche et du Parasite. Alors que l'Arche explose, le portail se referme, laissant passer la partie avant du vaisseau et l'Arbiter, mais laissant le Major et Cortana en arrière avec la deuxième partie du vaisseau.</p>
             </div>
         </div>
 
@@ -31,16 +64,83 @@
     <div id="background3" class="background">
         <h2>Spin off</h2>
         <div class="jaquette">
-            <div id="game4" class="game"></div>
-            <div id="game5" class="game"></div>
+            <div id="game4" class="game" onclick="openModal('modal4')"></div>
+            <div id="game5" class="game" onclick="openModal('modal5')"></div>
+        </div>
+    </div>
+    <div id="modal4" class="modal" onclick="closeModal('modal4')">
+        <div class="modal-content">
+            <!--<span class="close" onclick="closeModal('modal4')">&times;</span>-->
+            <h1>Halo 3: ODST</h1>
+            <br>
+            <h3>Sortie : 22/09/2009</h3>
+            <br>
+            <h3>Support : Xbox 360</h3>
+            <br>
+            <br>
+            <p>Les événements du jeu prennent place au cours de la campagne de Halo 2, suite au départ du vaisseau du Hauts prophète du Regret sur Terre. Une escouade de soldats a pour  mission de récupérer le Surintendant, la super-IA contrôlant la ville. Ils y découvrent que l’IA à était absorbée par un ingénieur covenant pacifiste. Leur nouvelle objectif est d’escorter cet ingénieur en lieu sûr afin de conserver l’IA. </p>
+        </div>
+    </div>
+    <div id="modal5" class="modal" onclick="closeModal('modal5')">
+        <div class="modal-content">
+            <!--<span class="close" onclick="closeModal('modal5')">&times;</span>-->
+            <h1>Halo Reach</h1>
+            <br>
+            <h3>Sortie : 14/09/2010</h3>
+            <br>
+            <h3>Support : Xbox 360</h3>
+            <br>
+            <br>
+            <p>Juste avant les événements de Halo Combat Evolved, une équipe de Spartan est envoyée sur Reach (le dernier rempart de la Terre) afin de repousser l’assaut covenant. Ils réussissent à faire décoller le Pillar of Autumn, mais eux, restent sur Reach condamnée à mourir par les Covenants.
+            </p>
         </div>
     </div>
     <div id="background4" class="background">
         <h2>2nd Trilogy</h2>
         <div class="jaquette">
-            <div id="game6" class="game"></div>
-            <div id="game7" class="game"></div>
-            <div id="game8" class="game"></div>
+            <div id="game6" class="game" onclick="openModal('modal6')"></div>
+            <div id="game7" class="game" onclick="openModal('modal7')"></div>
+            <div id="game8" class="game" onclick="openModal('modal8')"></div>
+        </div>
+    </div>
+    <div id="modal6" class="modal" onclick="closeModal('modal6')">
+        <div class="modal-content">
+            <!--<span class="close" onclick="closeModal('modal6')">&times;</span>-->
+            <h1>Halo 4</h1>
+            <br>
+            <h3>Sortie : 6/11/2012</h3>
+            <br>
+            <h3>Support : Xbox 360</h3>
+            <br>
+            <br>
+            <p>Le 21 juin 2557, après plus de quatre ans à la dérive sur la carcasse de l'UNSC Forward Unto Dawn, Cortana réveille le Major suite à sa folle découverte : une planète Foreunner. Une fois atterri, le Major se rend compte que Cortana commence à céder à la frénésie (fin de vie d’une IA), et se fixe pour objectif de retourner sur Terre auprès du docteur Halsey pour y trouver une solution. Ils découvrent que la planète où ils se trouvent se nomme Requiem, et qu’un signal fantôme d’un vaisseau UNSC s’y trouve. Ce signal était un piège d’un puissant Foreunner, le Didacte, qui a pour but de vitrifier l’humanité. Le Major et Cortana arrivent tout de même un vaisseau allié, l’Infinity. Ils pourchassent le Didacte qui se rend sur terre pour mettre fin à son projet. Cependant, le Major, à l’aide d’une bombe nucléaire, fait le choix de se sacrifier pour éliminer le Didacte grâce à une activation manuel de la bombe. Mais Cortana, lors de l’explosion, réussit à protéger le major pour elle-même se sacrifier.</p>
+        </div>
+    </div>
+    <div id="modal7" class="modal" onclick="closeModal('modal7')">
+        <div class="modal-content">
+            <!--<span class="close" onclick="closeModal('modal7')">&times;</span>-->
+            <h1>Halo 5: Guardians</h1>
+            <br>
+            <h3>Sortie : 27/10/2015</h3>
+            <br>
+            <h3>Support : Xbox One</h3>
+            <br>
+            <br>
+            <p>En 2558, plusieurs colonies humaines sont touchées par des événements cataclysmiques d'origine forerunner. Le docteur Halsey révèle à l’UNSC que ce sont des catastrophes provoquées par Cortana (qui a survécu lors de son sacrifice et qui a pris contrôle des Foreunner) et que le Major, étant partie à sa recherche, est en grand danger. L’UNSC envoie donc l’équipe Osiris, des super-soldats issue du programme SPARTAN-VI, afin de retrouver le Major. Pendant la mission, l’équipe Osiris découvrent que les catastrophes sont l'œuvre des gardiens, grandes structures Foreunner contrôlés par Cortana. Le Major réussit à retrouver Cortana qui lui explique que, comme les Foreunners, elle utilisera les Gardiens pour imposer la paix, et ne répond pas quand le Major lui rappelle qu'elle a causé la mort de nombreuses personnes en réveillant les Gardiens. Quand le Major tente de lui faire abandonner ses plans, Cortana refuse et le place dans un Cryptum afin de l’empêcher d'interférer dans ses plans sans le tuer, prévoyant de le libérer une fois son objectif atteint. Mais pendant son départ, l’équipe Osiris parvient de justesse à détruire le relais qui donnait à Cortana le contrôle du Cryptum, sauvant donc le Major de Cortana. Le Gardien de Cortana apparaît près de la Terre, où stationne l’Infinity qui parvient à passer en sous-espace avant que le Gardien ne désactive les systèmes électroniques sur Terre et dans son orbite, pendant que les IA alliées à Cortana coupent les communications entre les colonies.
+            </p>
+        </div>
+    </div>
+    <div id="modal8" class="modal" onclick="closeModal('modal8')">
+        <div class="modal-content">
+            <!--<span class="close" onclick="closeModal('modal8')">&times;</span>-->
+            <h1>Halo infinite</h1>
+            <br>
+            <h3>Sortie : 8/12/2021</h3>
+            <br>
+            <h3>Support : Xbox Séries X/S</h3>
+            <br>
+            <br>
+            <p>Après que Cortana se soit lancée dans une conquête galactique, le Dr Halsey, et l'équipage de l'Infinity mettent au point un piège pour l'éliminer. Utilisant une IA qui est presque une copie conforme de Cortana, L'UNSC prévoit d'attirer puis d'enfermer Cortana à l'intérieur d'un dispositif forerunner avant de l'effacer définitivement. L'Infinity se déploie près d'une Installation Halo, Halo Zêta, pour tendre le piège. Malheureusement, les Parias, une ancienne faction dissidente des Covenants réunissant bannis, pirates et autres mercenaires, attaquent le vaisseau et le détruisent avant de prendre le contrôle du Halo. Six mois après cette défaite, le Major est retrouvé et ranimé par un soldat survivant. Le Spartan devra rassembler les forces éparpillées de l'UNSC afin d'empêcher les Parias d'activer le Halo et asseoir leur domination sur la galaxie, tout en découvrant les nombreux secrets de l'installation.</p>
         </div>
     </div>
     <script src="scripts/script.js"></script>

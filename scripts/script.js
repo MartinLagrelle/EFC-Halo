@@ -1,25 +1,20 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var game1 = document.getElementById("game1");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-game1.onclick = function() {
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Close modal when clicking outside the modal content
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  var modals = document.getElementsByClassName('modal');
+  for (var i = 0; i < modals.length; i++) {
+      var modal = modals[i];
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
   }
-}
+};
