@@ -1,14 +1,21 @@
+/** Fonctions d'ouverture d'un modals - 
+ * 
+ * @param {*} modalId [Affiche le modal]
+ */
 function openModal(modalId) {
   var modal = document.getElementById(modalId);
   modal.style.display = "block";
 }
 
+/** Fonction de fermeture d'un modal
+ * 
+ * @param {*} modalId [Masque le modal]
+ */
 function closeModal(modalId) {
   var modal = document.getElementById(modalId);
   modal.style.display = "none";
 }
 
-// Close modal when clicking outside the modal content
 window.onclick = function(event) {
   var modals = document.getElementsByClassName('modal');
   for (var i = 0; i < modals.length; i++) {
